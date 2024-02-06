@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudo Ku</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <section class="homes">
+        <div class="home">
+          <video autoplay loop muted plays-inline class="back-video">
+            <source src="{{ url_for('static', filename='videos/videoplayback.mp4')}}" type="video/mp4"/>
+          </video>
+            <div class="navbar">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                      <i class="fas fa-bars"></i>
+                    </label>
+              <div class="logo"><a href="#">SUDO KU</a></div>
+            
+       
+            </div>
+            <div class="hj">
+                <h1 class="ml6">
+                    <span class="text-wrapper">
+                      <span class="letters">Sudo Ku Solver!..........</span>
+                    </span>
+                  </h1>
+                  <h3 class="ml4">
+                    <span class="text-wrapper">
+                      <span class="letterss">Made With Python</span>
+                    </span>
+                  </h3>
+                  <div class="b">
+                <p>Sudoku is a “brain game” that requires a variety of cognitive skills, such as quick decision making, spotting patterns, and applying logical reasoning. Sudoku gives us a chance to flex our mental musclesin a variety of ways.</p>
+            </div></div>
+            <div class="box1">
+              <img src="{{ url_for('static', filename='images/6693881.jpg')}}" class="img1" >
+            </div>
+            <div class="circle">SUDO KU
+            </div>
+            
+        </div>
+    </section>
+    <section class="page1s">
+    <div class="sd">  <h1>About Sudo Ku</h1></div>
+      <div class="page1">
+        <h1>“</h1>
+      </div>
+      <div class="jh">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sudoku, popular form of number game. In its simplest and most common configuration, sudoku consists of a 9 × 9 grid with numbers appearing in some of the squares. The object of the puzzle is to fill the remaining squares, using all the numbers 1–9 exactly once in each row, column, and the nine 3 × 3 subgrids. Sudoku is based entirely on logic, without any arithmetic involved, and the level of difficulty is determined by the quantity and positions of the original numbers. The puzzle, however, raised interesting combinatorial problems for mathematicians, two of whom proved in 2005 that there are 6,670,903,752,021,072,936,960 possible sudoku grids.</p>
+      </div>
+      <div class="en">
+        <h1>”</h1>
+      </div>
+    </section>
+    <section class="page2s">
+      <div class="page2">
+        <div class="kl">
+          <h1>Python!</h1>
+          <p>Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+        </div>
+        <div class="im">
+          <img src="{{ url_for('static', filename='images/1672867780327.png')}}"  class="img3" >
+        </div>
+        <div class="circle">SUDO KU
+        </div>
+      </div>    </section>
+      <form action="\predict" method="post">
+      <section class="page5">
+        <div class="homef">
+          <div class="pagefg">
+                  <div class="box11">
+                      <h1>
+                          def solve_sudoku(grid):<br>
+  row = [[True] * 9 for i in range(9)]<br>
+  col = [[True] * 9 for i in range(9)]<br>
+  regions = [[True] * 9 for i in range(9)]<br>
+  to_add = []<br>
+  for i in range(9):<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for j in range(9):<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if grid[i][j] != 0:<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d = grid[i][j] - 1<br>
+  &nbsp; &nbsp; row[i][d] = col[j][d] = regions[i // 3 * 3 + j // 3][d] = False<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else:<br>
+              to_add.append((i, j))<br>
+              
+                      </h1>
+                  </div>
+                  <div class="box22">
+                      <img src="{{ url_for('static', filename='images/k.jpg')}}" class="ho">
+                  </div>
+                  <div class="box33">
+                      <img src="{{ url_for('static', filename='images/l.jpg')}}" class="hf">
+                  </div>
+                  <div class="box44">
+                      <img src="{{ url_for('static', filename='images/s.png')}}" class="hq">
+                  </div>
+                  <div class="box-1">
+                      <button class="btn btn-one" id="ggf">
+                        <span>Run!!!-!</span>
+                      </div>
+                    </div>
+          </div>
+      </div>
+    </form>
+      </section>
+      <section class="page4">
+        <div class="container">
+          <div class="avatar">
+              <img src="{{ url_for('static', filename='images/d.jpg')}}"  alt="" />
+            </a>
+          </div>
+          <div class="content">
+            <h1>𝖁𝕴𝕾𝕸𝖀𝕹𝕬
+            </h1>
+            <p>Thank You</p>
+          </div>
+        </div>
+        <div class="circle1">SUDO KU
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
